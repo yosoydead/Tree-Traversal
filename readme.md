@@ -30,3 +30,15 @@
                 * push the value of the note to the variable that stores the values
             - invoke the helper function with the currrent variable
             - return the array of values
+        3. DFS - InOrder (traverse the entire left side, then visit the node, then traverse the entire right side) -> very similar to the previous one:
+            - create a variable to store the values of nodes visited
+            - store the root of the BST in a variable called *current*
+            - write a helper function which accepts a node
+                * if the node has a left property, call the helper function with the left property on the node
+                * push the value of the note to the variable that stores the values
+                * if the node has a right property, call the helper function with the right property on the node
+            - invoke the helper function
+            - return the array of values
+
+
+

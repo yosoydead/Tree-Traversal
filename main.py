@@ -10,5 +10,6 @@ tree.insert(20)
 
 #x = tree.BFS() [10, 6, 15, 3, 8, 20]
 #x = tree.DFSPreOrder() #[10, 6, 3, 8, 15, 20]
-x = tree.DFSPostOrder() #[3, 8, 6, 20, 15, 10]
+#x = tree.DFSPostOrder() #[3, 8, 6, 20, 15, 10]
+x = tree.DFSInOrder() #[3, 6, 8, 10, 15, 20]
 print(x)
