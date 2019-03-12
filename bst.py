@@ -111,3 +111,29 @@ class BST:
         
         #return the list that stores every node visited
         return variables
+
+    def DFSPreOrder(self):
+        #the data variable that will be returned at the end
+        data = []
+
+        #the current value which is == to the root
+        current = self.root
+
+        #define a helper function
+        def traverse(node):
+            #push the value of the node to the variable that stores the values
+            data.append(node.data)
+
+            #if the node has a left property, call the helper function with the left property on the node
+            if node.left:
+                traverse(node.left)
+
+            #if the node has a right property, call the helper function with the right property on the node
+            if node.right:
+                traverse(node.right)
+
+        #invoke the helper with the current var
+        traverse(current)
+
+        return data
+

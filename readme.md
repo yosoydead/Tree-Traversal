@@ -10,4 +10,13 @@
                 - if there is a left property on the node dequeued - add it to the queue
                 - if there is a right property on the node dequeued - add it to the queue
             - return the variable that stores the values
-    * Depth-First Search (going up or down visiting nodes, depending on the approach you chose)
+    * Depth-First Search (going up or down visiting nodes, depending on the approach you chose):
+        1. DFS - PreOrder (recursively):
+            - create a variable to store the values of nodes visited
+            - store the root of the BST in a variable called *current*
+            - write a helper function which accepts a node
+                * push the value of the node to the variable that stores the values
+                * if the node has a left property, call the helper function with the left property on the node
+                * if the node has a right property, call the helper function with the right property on the node
+            - invoke the helper function with the *current* variable
+            - return the array of values
