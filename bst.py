@@ -136,4 +136,30 @@ class BST:
         traverse(current)
 
         return data
+    
+    def DFSPostOrder(self):
+        #store the value of the nodes
+        data = []
 
+        #the current value which is == to the root
+        current = self.root
+
+        #define the helper function
+        def traverse(node):
+            #if the node has a left property, call the helper function with the left property on the node
+            if node.left:
+                traverse(node.left)
+            
+            #if the node has a right property, call the helper function with the right property on the node
+            if node.right:
+                traverse(node.right)
+
+            #push the value of the note to the variable that stores the values
+            data.append(node.data)
+
+        #invoke the helper function with the current node
+        traverse(current)
+
+        #return data
+        return data
+            
